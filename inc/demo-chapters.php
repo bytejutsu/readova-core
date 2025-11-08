@@ -1,6 +1,6 @@
 <?php
 /**
- * Create demo "Chapters" content on first activation of the Readova Core plugin.
+ * Create demo "Chapters" posts with featured images content on first activation of the Readova Core plugin.
  *
  * @package Readova_Core
  */
@@ -9,9 +9,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-/**
- * Create demo "Chapters" posts with featured images.
- */
+delete_option('readova_demo_chapters_added');
+
 function readova_core_add_demo_chapters() {
 
     // Only run once
@@ -111,7 +110,7 @@ function readova_core_add_demo_chapters() {
         if ($post_id && !empty($ch['filename'])) {
 
             // Path to plugin image folder
-            $source_path = plugin_dir_path(__FILE__) . 'images/' . $ch['filename'];
+            $source_path = plugin_dir_path(__FILE__) . '../images/' . $ch['filename'];
 
             if (!file_exists($source_path)) {
                 continue;
@@ -163,4 +162,3 @@ function readova_core_activate_plugin() {
     // Add demo content
     readova_core_add_demo_chapters();
 }
-register_activation_hook(__FILE__, 'readova_core_activate_plugin');
