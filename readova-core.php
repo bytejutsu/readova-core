@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Readova Core
  * Plugin URI: https://bytejutsu.com/readova
- * Description: Core functionality for the Readova theme — includes Chapters custom post type and demo content setup.
+ * Description: Core functionality plugin for the Readova theme. Registers the 'Chapters' custom post type and enables demo content import.
  * Version: 1.0.0
  * Author: ByteJutsu
- * Author URI: https://bytejutsu.com
+ * Author URI: https://bytejutsu.dev
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: readova
