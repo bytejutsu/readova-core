@@ -9,8 +9,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-delete_option('readova_demo_chapters_added');
-
 function readova_core_add_demo_chapters() {
 
     // Only run once
