@@ -108,7 +108,7 @@ function readova_core_add_demo_chapters() {
         if ($post_id && !empty($ch['filename'])) {
 
             // Path to plugin image folder
-            $source_path = plugin_dir_path(__FILE__) . '../images/' . $ch['filename'];
+            $source_path = plugin_dir_path(__FILE__) . '../assets/images/' . $ch['filename'];
 
             if (!file_exists($source_path)) {
                 continue;

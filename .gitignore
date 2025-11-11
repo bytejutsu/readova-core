@@ -1,0 +1,29 @@
+# === General ===
+.DS_Store
+Thumbs.db
+
+# === IDE / Editors ===
+.idea/
+.vscode/
+*.code-workspace
+
+# === OS Files ===
+__MACOSX/
+
+# === Node / Build tools (if any) ===
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-error.log
+
+# === Composer / PHP dependencies ===
+vendor/
+composer.lock
+
+# === Logs and Cache ===
+*.log
+*.cache
+
+# === WordPress specific ===
+wp-content/uploads/
