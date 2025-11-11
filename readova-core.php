@@ -5,7 +5,6 @@
  * Description: Core functionality plugin for the Readova theme. Registers the 'Chapters' custom post type and enables demo content import.
  * Version: 1.0.0
  * Author: ByteJutsu
- * Author URI: https://bytejutsu.dev
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: readova
