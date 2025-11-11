@@ -1,7 +1,6 @@
 <?php
 /**
  * Plugin Name: Readova Core
- * Plugin URI: https://bytejutsu.com/readova
  * Description: Core functionality plugin for the Readova theme. Registers the 'Chapters' custom post type and enables demo content import.
  * Version: 1.0.0
  * Author: ByteJutsu
