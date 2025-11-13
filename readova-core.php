@@ -23,5 +23,4 @@ require_once plugin_dir_path(__FILE__) . 'inc/cpt-chapters.php';
 require_once plugin_dir_path(__FILE__) . 'inc/demo-chapters.php';
 require_once plugin_dir_path(__FILE__) . 'inc/editor/classic-editor.php';
 
-// ADD THIS LINE
 register_activation_hook(__FILE__, 'readova_core_activate_plugin');
