@@ -9,7 +9,6 @@ Readova Core is the companion plugin for the Readova WordPress theme.
 It provides core functionality including custom post types and demo content.
 
 == Image Credits ==
-
 All images bundled with this plugin are sourced from the WordPress Photo Directory:
 https://wordpress.org/photos/
 
