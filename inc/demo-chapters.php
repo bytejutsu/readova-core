@@ -30,7 +30,7 @@ function readova_core_add_demo_chapters() {
                 <blockquote><p>Every story has a beginning, and this is ours.</p></blockquote>
                 <p>The following chapters will introduce you to new worlds and exciting characters. Get ready to explore.</p>
                 HTML,
-            'filename' => 'demo-chapter1.png',
+            'filename' => 'demo-chapter1.webp',
         ],
         [
             'title' => 'The Surfing Chronicles',
@@ -39,7 +39,7 @@ function readova_core_add_demo_chapters() {
                 <blockquote><p>Surfing is not just a sport; it's a way of life.</p></blockquote>
                 <p>Here is some more text to continue the chapter after the quote.</p>
                 HTML,
-            'filename' => 'demo-chapter2.png',
+            'filename' => 'demo-chapter2.webp',
         ],
         [
             'title' => 'Beyond the Horizon',
@@ -53,7 +53,7 @@ function readova_core_add_demo_chapters() {
                     <li>Reviewing the star charts.</li>
                 </ul>
                 HTML,
-            'filename' => 'demo-chapter3.png',
+            'filename' => 'demo-chapter3.webp',
         ],
         [
             'title' => 'A Whisper in the Woods',
@@ -67,7 +67,7 @@ function readova_core_add_demo_chapters() {
                     <li><strong>Start</strong> a fire.</li>
                 </ol>
                 HTML,
-            'filename' => 'demo-chapter4.png',
+            'filename' => 'demo-chapter4.webp',
         ],
         [
             'title' => 'The Summer Escape',
@@ -76,7 +76,7 @@ function readova_core_add_demo_chapters() {
                 <blockquote><p>Summer is a state of mind, filled with sunshine and poolside dreams.</p></blockquote>
                 <p>Nothing beats the feeling of diving into the clear, refreshing water.</p>
                 HTML,
-            'filename' => 'demo-chapter5.png',
+            'filename' => 'demo-chapter5.webp',
         ],
         [
             'title' => 'Flavors of Life',
@@ -85,7 +85,7 @@ function readova_core_add_demo_chapters() {
                 <blockquote><p>Variety is the very spice of life, That gives it all its flavor.</p></blockquote>
                 <p>From sweet to sour, each one offers a different experience, a new memory.</p>
                 HTML,
-            'filename' => 'demo-chapter6.png',
+            'filename' => 'demo-chapter6.webp',
         ],
     ];
 
