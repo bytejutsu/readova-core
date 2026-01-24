@@ -9,9 +9,52 @@ Readova Core is the companion plugin for the Readova WordPress theme.
 It provides core functionality including custom post types and demo content.
 
 == Image Credits ==
-All images included with this plugin are sourced from [Unsplash](https://unsplash.com)
-and are licensed under the Unsplash License: https://unsplash.com/license
-These images are used only for demonstration purposes and may be replaced by the website owner.
+
+All images bundled with this plugin are sourced from the WordPress Photo Directory:
+https://wordpress.org/photos/
+
+License: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+(WordPress Photo Directory photos are published under CC0.)
+
+Attribution is not required under CC0, but is provided below.
+
+Some images were modified using AI assisted tools (for example: crop, resize, style adjustments).
+The modified versions included in this plugin are also released under CC0 1.0 Universal.
+
+These images are included for demonstration purposes only and may be replaced by the site owner.
+
+Note: Per WordPress Photo Directory guidance, do not claim ownership or authorship of these photos.
+
+1. demo-chapter1.png
+   - Source: https://wordpress.org/photos/photo/526651a304/
+   - Author: Ivan Zhuck
+   - License: CC0 1.0 Universal
+
+2. demo-chapter2.png
+   - Source: https://wordpress.org/photos/photo/39865acbc6/
+   - Author: Heru Irawan
+   - License: CC0 1.0 Universal
+
+3. demo-chapter3.png
+   - Source: https://wordpress.org/photos/photo/29068b0c80/
+   - Author: Nora Ferreirós
+   - License: CC0 1.0 Universal
+
+4. demo-chapter4.png
+   - Source: https://wordpress.org/photos/photo/17368e7838/
+   - Author: Bigul Malayi
+   - License: CC0 1.0 Universal
+
+5. demo-chapter5.png
+   - Source: https://wordpress.org/photos/photo/51167dd285/
+   - Author: Nilo Velez
+   - License: CC0 1.0 Universal
+
+6. demo-chapter6.png
+   - Source: https://wordpress.org/photos/photo/45268ac3ff/
+   - Author: Alina Kakshapati
+   - License: CC0 1.0 Universal
 
 == License ==
 This plugin is distributed under the GPLv2 (or later).
