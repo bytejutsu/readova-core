@@ -1,8 +1,15 @@
 === Readova Core ===
-Version: 1.0.0
-Author: ByteJutsu
+Contributors: bytejutsu
+Tags: readova, ebook, chapters, author
+Requires at least: 5.2
+Tested up to: 6.9
+Requires PHP: 7.4
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Readova Core provides the required functionality for the Readova theme, including chapters management and setup tools.
+
 
 == Description ==
 Readova Core is the companion plugin for the Readova WordPress theme.

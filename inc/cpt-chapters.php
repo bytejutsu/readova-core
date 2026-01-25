@@ -58,7 +58,7 @@ add_action('admin_head', function () {
 // Redirect chapter frontend access
 add_action('template_redirect', function () {
     if (is_singular('chapter')) {
-        wp_redirect(home_url());
+        wp_safe_redirect(home_url());
         exit;
     }
 });
