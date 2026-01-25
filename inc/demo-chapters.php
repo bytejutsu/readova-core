@@ -21,73 +21,68 @@ function readova_core_add_demo_chapters() {
         return;
     }
 
-    // Define demo chapters (with HEREDOC content)
+    // Define demo chapters (no heredoc)
     $chapters = [
         [
-            'title' => 'Introduction',
-            'content' => <<<HTML
-                <p>Welcome to the Readova theme. This is a brief introduction to the story, setting the stage for the adventure to come. We hope you enjoy the journey.</p>
-                <blockquote><p>Every story has a beginning, and this is ours.</p></blockquote>
-                <p>The following chapters will introduce you to new worlds and exciting characters. Get ready to explore.</p>
-                HTML,
+            'title'   => 'Introduction',
+            'content' =>
+                '<p>Welcome to the Readova theme. This is a brief introduction to the story, setting the stage for the adventure to come. We hope you enjoy the journey.</p>'
+                . '<blockquote><p>Every story has a beginning, and this is ours.</p></blockquote>'
+                . '<p>The following chapters will introduce you to new worlds and exciting characters. Get ready to explore.</p>',
             'filename' => 'demo-chapter1.webp',
         ],
         [
-            'title' => 'The Surfing Chronicles',
-            'content' => <<<HTML
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. This is a standard paragraph.</p>
-                <blockquote><p>Surfing is not just a sport; it's a way of life.</p></blockquote>
-                <p>Here is some more text to continue the chapter after the quote.</p>
-                HTML,
+            'title'   => 'The Surfing Chronicles',
+            'content' =>
+                '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. This is a standard paragraph.</p>'
+                . '<blockquote><p>Surfing is not just a sport; it\'s a way of life.</p></blockquote>'
+                . '<p>Here is some more text to continue the chapter after the quote.</p>',
             'filename' => 'demo-chapter2.webp',
         ],
         [
-            'title' => 'Beyond the Horizon',
-            'content' => <<<HTML
-                <p>Cras suscipit, quam vitae dapibus facilisis, odio sem pulvinar risus, non suscipit lacus est in sapien. This chapter explores the unknown.</p>
-                <blockquote><p>The only way to discover the limits of the possible is to go beyond them.</p></blockquote>
-                <p>Key preparations include:</p>
-                <ul>
-                    <li>Checking the navigation systems.</li>
-                    <li>Stocking up on supplies.</li>
-                    <li>Reviewing the star charts.</li>
-                </ul>
-                HTML,
+            'title'   => 'Beyond the Horizon',
+            'content' =>
+                '<p>Cras suscipit, quam vitae dapibus facilisis, odio sem pulvinar risus, non suscipit lacus est in sapien. This chapter explores the unknown.</p>'
+                . '<blockquote><p>The only way to discover the limits of the possible is to go beyond them.</p></blockquote>'
+                . '<p>Key preparations include:</p>'
+                . '<ul>'
+                . '<li>Checking the navigation systems.</li>'
+                . '<li>Stocking up on supplies.</li>'
+                . '<li>Reviewing the star charts.</li>'
+                . '</ul>',
             'filename' => 'demo-chapter3.webp',
         ],
         [
-            'title' => 'A Whisper in the Woods',
-            'content' => <<<HTML
-                <p>Curabitur vel sem sit amet dolor placerat vehicula. Nullam a lectus at leo tincidunt aliquam. The forest holds many secrets.</p>
-                <blockquote><p>In every walk with nature, one receives far more than he seeks.</p></blockquote>
-                <p>To survive, you must remember the steps in order:</p>
-                <ol>
-                    <li><strong>Find</strong> a water source.</li>
-                    <li><strong>Build</strong> a shelter.</li>
-                    <li><strong>Start</strong> a fire.</li>
-                </ol>
-                HTML,
+            'title'   => 'A Whisper in the Woods',
+            'content' =>
+                '<p>Curabitur vel sem sit amet dolor placerat vehicula. Nullam a lectus at leo tincidunt aliquam. The forest holds many secrets.</p>'
+                . '<blockquote><p>In every walk with nature, one receives far more than he seeks.</p></blockquote>'
+                . '<p>To survive, you must remember the steps in order:</p>'
+                . '<ol>'
+                . '<li><strong>Find</strong> a water source.</li>'
+                . '<li><strong>Build</strong> a shelter.</li>'
+                . '<li><strong>Start</strong> a fire.</li>'
+                . '</ol>',
             'filename' => 'demo-chapter4.webp',
         ],
         [
-            'title' => 'The Summer Escape',
-            'content' => <<<HTML
-                <p>Aenean lacinia bibendum nulla sed consectetur. This chapter is all about relaxing and finding joy in the simple things, like a cool pool on a hot day.</p>
-                <blockquote><p>Summer is a state of mind, filled with sunshine and poolside dreams.</p></blockquote>
-                <p>Nothing beats the feeling of diving into the clear, refreshing water.</p>
-                HTML,
+            'title'   => 'The Summer Escape',
+            'content' =>
+                '<p>Aenean lacinia bibendum nulla sed consectetur. This chapter is all about relaxing and finding joy in the simple things, like a cool pool on a hot day.</p>'
+                . '<blockquote><p>Summer is a state of mind, filled with sunshine and poolside dreams.</p></blockquote>'
+                . '<p>Nothing beats the feeling of diving into the clear, refreshing water.</p>',
             'filename' => 'demo-chapter5.webp',
         ],
         [
-            'title' => 'Flavors of Life',
-            'content' => <<<HTML
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. We explore the vibrant tastes that make life interesting.</p>
-                <blockquote><p>Variety is the very spice of life, That gives it all its flavor.</p></blockquote>
-                <p>From sweet to sour, each one offers a different experience, a new memory.</p>
-                HTML,
+            'title'   => 'Flavors of Life',
+            'content' =>
+                '<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. We explore the vibrant tastes that make life interesting.</p>'
+                . '<blockquote><p>Variety is the very spice of life, That gives it all its flavor.</p></blockquote>'
+                . '<p>From sweet to sour, each one offers a different experience, a new memory.</p>',
             'filename' => 'demo-chapter6.webp',
         ],
     ];
+
 
     // Ensure necessary WordPress includes are available
     require_once(ABSPATH . 'wp-admin/includes/file.php');
