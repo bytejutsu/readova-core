@@ -8,13 +8,13 @@ if (!defined('ABSPATH')) exit;
 function readova_core_register_chapter_cpt()
 {
     $labels = [
-        'name' => __('Chapters', 'readova'),
-        'singular_name' => __('Chapter', 'readova'),
-        'add_new_item' => __('Add New Chapter', 'readova'),
-        'edit_item' => __('Edit Chapter', 'readova'),
-        'new_item' => __('New Chapter', 'readova'),
-        'view_item' => __('View Chapter', 'readova'),
-        'all_items' => __('All Chapters', 'readova'),
+        'name' => __('Chapters', 'readova-core'),
+        'singular_name' => __('Chapter', 'readova-core'),
+        'add_new_item' => __('Add New Chapter', 'readova-core'),
+        'edit_item' => __('Edit Chapter', 'readova-core'),
+        'new_item' => __('New Chapter', 'readova-core'),
+        'view_item' => __('View Chapter', 'readova-core'),
+        'all_items' => __('All Chapters', 'readova-core'),
     ];
 
     $args = [
