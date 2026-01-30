@@ -158,6 +158,13 @@ function readova_core_activate_plugin() {
         readova_core_register_chapter_cpt();
     }
 
+    // Flush after CPT registration
+    flush_rewrite_rules();
+
     // Add demo content
     readova_core_add_demo_chapters();
+}
+
+function readova_core_deactivate_plugin() {
+    flush_rewrite_rules();
 }

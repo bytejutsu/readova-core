@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define constants
-define('READOVA_CORE_VERSION', '1.0.0');
+define('READOVA_CORE_VERSION', '1.0.1');
 define('READOVA_CORE_PATH', plugin_dir_path(__FILE__));
 define('READOVA_CORE_URL', plugin_dir_url(__FILE__));
 define('READOVA_CORE_CPT_CHAPTER', 'readova_chapter');
@@ -25,3 +25,4 @@ require_once plugin_dir_path(__FILE__) . 'inc/demo-chapters.php';
 require_once plugin_dir_path(__FILE__) . 'inc/editor/classic-editor.php';
 
 register_activation_hook(__FILE__, 'readova_core_activate_plugin');
+register_deactivation_hook(__FILE__, 'readova_core_deactivate_plugin');

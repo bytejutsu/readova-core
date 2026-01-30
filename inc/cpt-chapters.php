@@ -1,6 +1,6 @@
 <?php
 /**
- * Register the "Chapter" custom post type.
+ * Register the "Readova Chapter" custom post type.
  */
 
 if (!defined('ABSPATH')) exit;
