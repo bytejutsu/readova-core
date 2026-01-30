@@ -85,9 +85,6 @@ function readova_core_add_demo_chapters() {
 
 
     // Ensure necessary WordPress includes are available
-    //require_once(ABSPATH . 'wp-admin/includes/file.php');
-    //require_once(ABSPATH . 'wp-admin/includes/media.php');
-    //require_once(ABSPATH . 'wp-admin/includes/image.php');
 
     // Only load admin image functions if needed (activation can run without admin includes loaded)
     if ( ! function_exists( 'wp_generate_attachment_metadata' ) ) {
