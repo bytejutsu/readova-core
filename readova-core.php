@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Readova Core
- * Description: Core functionality plugin for the Readova theme. Registers the 'Chapters' custom post type and enables demo content import.
+ * Description: Core functionality plugin for the Readova theme. Registers the 'Readova Chapters' custom post type and enables demo content import.
  * Version: 1.0.0
  * Author: ByteJutsu
  * License: GPL-2.0+
@@ -17,6 +17,7 @@ if (!defined('ABSPATH')) {
 define('READOVA_CORE_VERSION', '1.0.0');
 define('READOVA_CORE_PATH', plugin_dir_path(__FILE__));
 define('READOVA_CORE_URL', plugin_dir_url(__FILE__));
+define('READOVA_CORE_CPT_CHAPTER', 'readova_chapter');
 
 // Include core functionality
 require_once plugin_dir_path(__FILE__) . 'inc/cpt-chapters.php';

@@ -1,6 +1,6 @@
 <?php
 /**
- * Create demo "Chapters" posts with featured images content on first activation of the Readova Core plugin.
+ * Create demo "Readova Chapters" posts with featured images content on first activation of the Readova Core plugin.
  *
  * @package Readova_Core
  */
@@ -17,7 +17,7 @@ function readova_core_add_demo_chapters() {
     }
 
     // Make sure CPT is registered first
-    if (!post_type_exists('chapter')) {
+    if (!post_type_exists(READOVA_CORE_CPT_CHAPTER)) {
         return;
     }
 
@@ -85,9 +85,15 @@ function readova_core_add_demo_chapters() {
 
 
     // Ensure necessary WordPress includes are available
-    require_once(ABSPATH . 'wp-admin/includes/file.php');
-    require_once(ABSPATH . 'wp-admin/includes/media.php');
-    require_once(ABSPATH . 'wp-admin/includes/image.php');
+    //require_once(ABSPATH . 'wp-admin/includes/file.php');
+    //require_once(ABSPATH . 'wp-admin/includes/media.php');
+    //require_once(ABSPATH . 'wp-admin/includes/image.php');
+
+    // Only load admin image functions if needed (activation can run without admin includes loaded)
+    if ( ! function_exists( 'wp_generate_attachment_metadata' ) ) {
+        require_once ABSPATH . 'wp-admin/includes/image.php';
+    }
+
 
     foreach ($chapters as $ch) {
 
@@ -95,7 +101,7 @@ function readova_core_add_demo_chapters() {
         $post_id = wp_insert_post([
             'post_title'   => wp_strip_all_tags($ch['title']),
             'post_content' => $ch['content'],
-            'post_type'    => 'chapter',
+            'post_type'    => READOVA_CORE_CPT_CHAPTER,
             'post_status'  => 'publish',
         ]);
 

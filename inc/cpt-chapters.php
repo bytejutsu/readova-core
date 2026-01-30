@@ -30,13 +30,13 @@ function readova_core_register_chapter_cpt()
         'has_archive' => false,
     ];
 
-    register_post_type('chapter', $args);
+    register_post_type(READOVA_CORE_CPT_CHAPTER, $args);
 }
 add_action('init', 'readova_core_register_chapter_cpt');
 
-// Disable Gutenberg for 'chapter'
+// Disable Gutenberg for 'readova_chapter'
 add_filter('use_block_editor_for_post_type', function ($use_block_editor, $post_type) {
-    if ($post_type === 'chapter') {
+    if ($post_type === READOVA_CORE_CPT_CHAPTER) {
         return false;
     }
     return $use_block_editor;
@@ -44,20 +44,20 @@ add_filter('use_block_editor_for_post_type', function ($use_block_editor, $post_
 
 // Add classic editor support
 add_action('init', function () {
-    add_post_type_support('chapter', 'editor');
+    add_post_type_support(READOVA_CORE_CPT_CHAPTER, 'editor');
 });
 
 // Hide media button for chapters
 add_action('admin_head', function () {
     $screen = get_current_screen();
-    if ($screen && $screen->post_type === 'chapter') {
+    if ($screen && $screen->post_type === READOVA_CORE_CPT_CHAPTER) {
         remove_action('media_buttons', 'media_buttons');
     }
 });
 
 // Redirect chapter frontend access
 add_action('template_redirect', function () {
-    if (is_singular('chapter')) {
+    if (is_singular(READOVA_CORE_CPT_CHAPTER)) {
         wp_safe_redirect(home_url());
         exit;
     }
@@ -65,7 +65,7 @@ add_action('template_redirect', function () {
 
 // Remove "View" and permalink actions
 add_filter('post_row_actions', function ($actions, $post) {
-    if ($post->post_type === 'chapter') {
+    if ($post->post_type === READOVA_CORE_CPT_CHAPTER) {
         unset($actions['view']);
     }
     return $actions;
@@ -73,7 +73,7 @@ add_filter('post_row_actions', function ($actions, $post) {
 
 add_filter('get_sample_permalink_html', function ($html, $post_id) {
     $post = get_post($post_id);
-    if ($post && $post->post_type === 'chapter') {
+    if ($post && $post->post_type === READOVA_CORE_CPT_CHAPTER) {
         return '';
     }
     return $html;
