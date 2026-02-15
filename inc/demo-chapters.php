@@ -145,23 +145,3 @@ function readova_core_add_demo_chapters() {
     // Mark demo content as imported
     update_option('readova_demo_chapters_added', true);
 }
-
-/**
- * Run after plugin activation.
- */
-function readova_core_activate_plugin() {
-    // Register the CPT before running demo importer
-    if (function_exists('readova_core_register_chapter_cpt')) {
-        readova_core_register_chapter_cpt();
-    }
-
-    // Flush after CPT registration
-    flush_rewrite_rules();
-
-    // Add demo content
-    readova_core_add_demo_chapters();
-}
-
-function readova_core_deactivate_plugin() {
-    flush_rewrite_rules();
-}
