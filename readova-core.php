@@ -21,6 +21,7 @@ define('READOVA_CORE_CPT_CHAPTER', 'readova_chapter');
 require_once READOVA_CORE_PATH . 'inc/cpt-chapters.php';
 require_once READOVA_CORE_PATH . 'inc/demo-chapters.php';
 require_once READOVA_CORE_PATH . 'inc/editor/classic-editor.php';
+require_once READOVA_CORE_PATH . 'inc/activation.php';
 
 if (is_admin()) {
     require_once READOVA_CORE_PATH . 'inc/admin/admin-dashboard-cleanup.php';
