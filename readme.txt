@@ -1,19 +1,21 @@
 === Readova Core ===
-Contributors: bytejutsu
-Tags: readova, ebook, chapters, author
+Contributors: ByteJutsu
+Tags: readova, chapters, ebook, author, demo-content, custom-post-type
 Requires at least: 5.2
-Tested up to: 6.9
-Requires PHP: 7.4
+Tested up to: 6.9.1
+Requires PHP: 5.6
 Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Readova Core provides the required functionality for the Readova theme, including chapters management and setup tools.
-
+Companion plugin for the Readova theme. Adds the Chapters custom post type, demo chapters import, and optional admin simplification tools when Readova is active.
 
 == Description ==
 Readova Core is the companion plugin for the Readova WordPress theme.
-It provides core functionality including custom post types and demo content.
+It provides core functionality including:
+- Chapters custom post type (Readova Chapters)
+- Demo chapters import tools
+- Optional admin simplification when Readova is the active theme
 
 == Image Credits ==
 All images bundled with this plugin are sourced from the WordPress Photo Directory:
